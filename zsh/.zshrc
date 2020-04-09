@@ -1,8 +1,8 @@
 ## BASICS ##
-export ZSH_STUFF=~/Dropbox/Apps/zsh
+export ZSH_STUFF="${HOME}/.dotfiles/zsh"
 
 # oh-my-zsh
-source "${ZSH_STUFF}/zsh-config.zsh"
+source "${ZSH_STUFF}/oh-my-zsh-config.zsh"
 
 # hh (shell history)
 export HISTFILE=~/.zsh_history  # ensure history file visibility
@@ -14,14 +14,16 @@ bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
 
 # Path
 source "${ZSH_STUFF}/path.zsh"
-# Custom aliased
+# Aliases
 source "${ZSH_STUFF}/aliases.zsh"
-# Custom functions
-source "${ZSH_STUFF}/misc_functions.zsh"
+# Functions
+source "${ZSH_STUFF}/functions.zsh"
+
 # OnSite stuff
-source "${ZSH_STUFF}/onsite.zsh"
+source "${ZSH_STUFF}/lssupport/onsite/server.zsh"
+source "${ZSH_STUFF}/lssupport/onsite/api.zsh"
 # Support Ops stuff
-source "${ZSH_STUFF}/supp_ops.zsh"
+source "${ZSH_STUFF}/lssupport/supportops/homestead.zsh"
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

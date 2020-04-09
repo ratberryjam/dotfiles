@@ -1,8 +1,15 @@
 #!/usr/bin/env zsh
 
-DOTFILES="${0:a:h}"
+DOTFILES="${HOME}/.dotfiles"
 BACKUP_SUFFIX=backup
+
+# Homebrew packages
+if [ ! -x /usr/local/bin/brew ]; then
+    echo
+fi
+
+brew install zsh
 
 # Link
 mv "${HOME}/.zshrc" "${HOME}/.zshrc.${BACKUP_SUFFIX}"
-ln -s "${DOTFILES}/.zshrc" "${HOME}/.zshrc"
+ln -s "${DOTFILES}/zsh/.zshrc" "${HOME}/.zshrc"
