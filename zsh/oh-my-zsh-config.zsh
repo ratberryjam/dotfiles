@@ -95,12 +95,14 @@ plugins=(
   colorize
   colored-man-pages
   dash
+  fasd
   forklift
+  fzf
+  fzf-z
   git
   homestead
   thefuck
   virtualenvwrapper
-  z
 )
 
 source $ZSH/oh-my-zsh.sh
