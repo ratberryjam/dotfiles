@@ -32,4 +32,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # cowsay $(curl -s -H "Accept: text/plain" https://icanhazdadjoke.com/; echo)
 
 # Ruby
-eval "$(rbenv init -)"
+if [ $(command -v rbenv) ]; then
+    eval "$(rbenv init -)"
+fi
