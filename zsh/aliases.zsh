@@ -10,4 +10,4 @@ alias zi='fasd -e cd -i'
 alias dadjoke='curl -s -H "Accept: text/plain" https://icanhazdadjoke.com/; echo'
 
 # Open VSCodium with `code`
-alias code=codium
+# alias code=codium
