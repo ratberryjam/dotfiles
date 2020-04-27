@@ -1,4 +1,5 @@
 PACKAGES=(
+    duti
     fzf
     fasd
     thefuck
