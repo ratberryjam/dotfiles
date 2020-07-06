@@ -3,8 +3,9 @@ function homestead() {
     ( cd ~/Homestead && vagrant $* )
 }
 
-# Homestead shortcut
+# Homestead shortcuts
 alias hs=homestead
+alias hsr='homestead halt && homestead up'
 
 ## SSH to Homestead, starting the VM if necessary
 function hssh() {
