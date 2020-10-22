@@ -101,6 +101,7 @@ plugins=(
   fzf-z
   git
   homestead
+  osx
   thefuck
   virtualenvwrapper
 )

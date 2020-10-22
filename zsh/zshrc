@@ -35,3 +35,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 if [ $(command -v rbenv) ]; then
     eval "$(rbenv init -)"
 fi
+
+# zcli autocomplete setup
+ZCLI_AC_ZSH_SETUP_PATH=/Users/james.ratcliffe/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup && test -f $ZCLI_AC_ZSH_SETUP_PATH && source $ZCLI_AC_ZSH_SETUP_PATH;
