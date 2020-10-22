@@ -48,3 +48,24 @@ EOF
 function fl() {
   open -a Forklift $(pwd)
 }
+
+
+function iterm_tmux_attempt_attach() {
+  sessions=$(tmux ls)
+
+  if [[ -n $sessions ]]; then
+    echo "Attaching to existing session…"
+    tmux -CC attach
+  else
+    echo "Starting new session…"
+    tmux -CC
+  fi
+}
+
+function workbackup() {
+  borg create \
+  james@imac.local:/Volumes/External/Work\ Backups::$(date "+%a_%Y-%m-%d") \
+  ~/Sites ~/Documents ~/Projects \
+  -e 'node_modules' -e '.git' -e 'vendor' \
+  --stats --progress
+}
