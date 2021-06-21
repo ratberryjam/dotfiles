@@ -103,7 +103,7 @@ plugins=(
   homestead
   osx
   thefuck
-  virtualenvwrapper
+  laravel
 )
 
 source $ZSH/oh-my-zsh.sh
