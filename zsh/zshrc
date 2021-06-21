@@ -36,5 +36,10 @@ if [ $(command -v rbenv) ]; then
     eval "$(rbenv init -)"
 fi
 
-# zcli autocomplete setup
+# zcli autocomplete
 ZCLI_AC_ZSH_SETUP_PATH=/Users/james.ratcliffe/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup && test -f $ZCLI_AC_ZSH_SETUP_PATH && source $ZCLI_AC_ZSH_SETUP_PATH;
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
