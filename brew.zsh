@@ -2,9 +2,8 @@ PACKAGES=(
     duti
     fzf
     fasd
-    thefuck
+#    thefuck
     tree
-    zsh
 )
 
-brew install $PACKAGES
+brew install "${PACKAGES[@]}"
