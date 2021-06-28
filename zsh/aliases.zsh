@@ -14,4 +14,5 @@ alias dadjoke='curl -s -H "Accept: text/plain" https://icanhazdadjoke.com/; echo
 
 # Laravel Sail
 alias sail='bash vendor/bin/sail'
+alias sup='sail up -d'
 alias sart='sail artisan'
