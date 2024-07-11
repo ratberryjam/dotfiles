@@ -10,15 +10,15 @@ fi
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # zcli autocomplete setup
-# shellcheck source=/Users/james.ratcliffe/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup
-ZCLI_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup" && test -f "$ZCLI_AC_ZSH_SETUP_PATH" && source "$ZCLI_AC_ZSH_SETUP_PATH";
+# shellcheck source="$HOME/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup"
+ZCLI_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup" && test -f "$ZCLI_AC_ZSH_SETUP_PATH" && source "$ZCLI_AC_ZSH_SETUP_PATH"
 
 # PHP Brew
-source /Users/james.ratcliffe/.phpbrew/bashrc
+source "$HOME/.phpbrew/bashrc"
 
 # Lightspeed shared Docker environment
 export SHARED_ENV_PATH=/dev/docker-shared-environment

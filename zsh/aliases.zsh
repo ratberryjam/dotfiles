@@ -6,10 +6,11 @@ alias dlpl='youtube-dl -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" 
 # Random dad joke (https://github.com/Anupya/dadjoke-cli)
 alias dadjoke='curl -s -H "Accept: text/plain" https://icanhazdadjoke.com/; echo'
 
-# Laravel Sail
+# Laravel
 alias sail='bash vendor/bin/sail'
 alias sup='sail up -d'
-alias sart='sail artisan'
+# alias sart='sail artisan'
+alias art=artisan
 
 # git
 alias gs='git status'
