@@ -1,5 +1,4 @@
 export PATH="${HOME}/bin:${PATH}"
-# export PATH="${HOME}/Dropbox/bin:${PATH}"
 export PATH="/usr/local/sbin:${PATH}"
 
 # go
@@ -13,9 +12,9 @@ export PATH=$PATH:"~/.gem/ruby/2.0.0/bin"
 
 #php
 export PATH=$PATH:"${HOME}/.composer/vendor/bin"
-# export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-# export PATH="/usr/local/opt/php@7.2/bin:$PATH"
-# export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Docker debug
+export PATH="$PATH:$HOME/.local/bin"
