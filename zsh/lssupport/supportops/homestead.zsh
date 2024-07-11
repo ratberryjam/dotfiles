@@ -15,6 +15,6 @@ function hssh() {
         if [[ -z $RUNNING  ]]; then
             vagrant up
         fi
-        vagrant ssh -- -R 2224:localhost:2224
+        vagrant ssh -- -t -R 2224:localhost:2224 "tmux -CC new -A -s main"
     )
 }
