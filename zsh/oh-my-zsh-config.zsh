@@ -101,7 +101,7 @@ plugins=(
   fzf-z
   git
   homestead
-  osx
+  macos
   thefuck
   laravel
 )
