@@ -45,11 +45,6 @@ EOF
   fi
 }
 
-function fl() {
-  open -a Forklift $(pwd)
-}
-
-
 function iterm_tmux_attempt_attach() {
   sessions=$(tmux ls)
 
@@ -62,10 +57,4 @@ function iterm_tmux_attempt_attach() {
   fi
 }
 
-function workbackup() {
-  borg create \
-  james@imac.local:/Volumes/External/Work\ Backups::$(date "+%a_%Y-%m-%d") \
-  ~/Sites ~/Documents ~/Projects \
-  -e 'node_modules' -e '.git' -e 'vendor' \
-  --stats --progress
 }

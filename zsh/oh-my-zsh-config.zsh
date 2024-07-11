@@ -95,12 +95,7 @@ plugins=(
   colorize
   colored-man-pages
   dash
-  fasd
-  forklift
-  fzf
-  fzf-z
   git
-  homestead
   macos
   thefuck
   laravel
