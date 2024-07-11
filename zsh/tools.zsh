@@ -38,3 +38,16 @@ eval "$(zoxide init zsh)"
 
 # Google Cloud
 if [ -f '/Volumes/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Volumes/dev/google-cloud-sdk/path.zsh.inc'; fi
+
+# thefuck
+eval $(thefuck --alias)
+
+# moar
+export PAGER=/opt/homebrew/bin/moar
+# export MOAR=
+
+# bat
+export BAT_THEME="TwoDark"
+
+# zsh-artisan
+export ARTISAN_OPEN_ON_MAKE_EDITOR=pstorm

@@ -1,9 +1,12 @@
 PACKAGES=(
     duti
-    fzf
+    eza
     fasd
-#    thefuck
+    fzf
+    thefuck
     tree
+    micro
+    moar
 )
 
 brew install "${PACKAGES[@]}"

@@ -17,4 +17,10 @@ alias gf='git fetch'
 alias gc='git checkout'
 alias gb='git checkout -b'
 alias gpl='git pull'
-alias gpu='git push'git sta
+alias gpu='git push'
+
+# PHPStorm
+alias pstorm='phpstorm'
+
+# eza replacing ls
+alias ls='eza -l --git --icons=auto --color=auto --time-style=relative'

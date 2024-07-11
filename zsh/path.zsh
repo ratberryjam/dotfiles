@@ -18,3 +18,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Docker debug
 export PATH="$PATH:$HOME/.local/bin"
+# PHPStormexport PATH="$PATH:/Applications/PhpStorm.app/Contents/MacOS"# Composer global packagesexport PATH=~/.composer/vendor/bin:$PATH
