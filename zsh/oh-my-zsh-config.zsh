@@ -101,8 +101,6 @@ plugins=(
   thefuck
   virtualenvwrapper
   z
-  # custom
-  lssupport
 )
 
 source $ZSH/oh-my-zsh.sh
