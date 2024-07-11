@@ -1,7 +1,7 @@
 ## BASICS ##
 
-# oh-my-zsh
-source "${ZSH_STUFF}/oh-my-zsh-config.zsh"
+# zplug
+source "${ZSH_STUFF}/zplug.zsh"
 
 # Path
 source "${ZSH_STUFF}/path.zsh"
