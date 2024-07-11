@@ -9,3 +9,6 @@ source "${ZSH_STUFF}/path.zsh"
 source "${ZSH_STUFF}/aliases.zsh"
 # Functions
 source "${ZSH_STUFF}/functions.zsh"
+
+# Setup different dev tools
+source "${ZSH_STUFF}/tools.zsh"
