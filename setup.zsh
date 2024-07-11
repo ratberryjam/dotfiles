@@ -32,3 +32,7 @@ if [[ ! -e "$ZSH/custom/plugins/fzf-z" ]]; then
 fi
 
 source ~/.zshrc
+
+if [ $(command -v duti) ]; then
+    duti "${DOTFILES}/duti.config"
+fi
