@@ -57,4 +57,11 @@ function iterm_tmux_attempt_attach() {
   fi
 }
 
+# Shortcut for Laravel artisan
+function art() {
+  if [[ -f "vendor/bin/sail" ]]; then
+    sail artisan "$*"
+  else
+    php artisan "$*"
+  fi
 }

@@ -10,3 +10,11 @@ alias dadjoke='curl -s -H "Accept: text/plain" https://icanhazdadjoke.com/; echo
 alias sail='bash vendor/bin/sail'
 alias sup='sail up -d'
 alias sart='sail artisan'
+
+# git
+alias gs='git status'
+alias gf='git fetch'
+alias gc='git checkout'
+alias gb='git checkout -b'
+alias gpl='git pull'
+alias gpu='git push'git sta
