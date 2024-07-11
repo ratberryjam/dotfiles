@@ -14,6 +14,6 @@ function hssh() {
         if [[ -z $RUNNING  ]]; then
             vagrant up
         fi
-        vagrant ssh
+        vagrant ssh -- -R 2224:localhost:2224
     )
 }
