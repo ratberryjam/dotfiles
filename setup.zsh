@@ -13,7 +13,7 @@ source "${DOTFILES}/brew.zsh"
 
 # Link
 mv "${HOME}/.zshrc" "${HOME}/.zshrc.${BACKUP_SUFFIX}"
-ln -s "${DOTFILES}/zsh/zshrc" "${HOME}/.zshrc"
+cp "${DOTFILES}/zsh/zshrc.example" "${HOME}/.zshrc"
 
 mv "${HOME}/.zlogout" "${HOME}/.zlogout.${BACKUP_SUFFIX}"
 ln -s "${DOTFILES}/zsh/zlogout" "${HOME}/.zlogout"
