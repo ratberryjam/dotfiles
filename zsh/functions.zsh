@@ -87,4 +87,4 @@ function fl() {
 #   # Chrome Dark Reader
 #   osascript -e 'tell app "Chrome" to activate'
 #   osascript -e 'tell application "System Events" to keystroke "d" using {shift down, option down}'
-}
+# }
