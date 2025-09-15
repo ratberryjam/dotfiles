@@ -1,4 +1,5 @@
 PACKAGES=(
+    antidote
     duti
     eza
     fasd
@@ -7,6 +8,7 @@ PACKAGES=(
     tree
     micro
     moar
+    gum
 )
 
 brew install "${PACKAGES[@]}"

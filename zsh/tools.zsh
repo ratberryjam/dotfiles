@@ -5,7 +5,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Ruby
 if [ "$(command -v rbenv)" ]; then
-    eval "$(rbenv init -)"
+	eval "$(rbenv init -)"
 fi
 
 # nvm
@@ -50,4 +50,10 @@ export PAGER=/opt/homebrew/bin/moar
 export BAT_THEME="TwoDark"
 
 # zsh-artisan
-export ARTISAN_OPEN_ON_MAKE_EDITOR=pstorm
+export ARTISAN_OPEN_ON_MAKE_EDITOR=code
+
+# VS Code
+if [ -x "$(command -v code)" ]; then
+	code --locate-shell-integration-path zsh
+	[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+fi

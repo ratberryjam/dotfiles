@@ -1,7 +1,7 @@
 ## BASICS ##
 
-# zplug
-source "${ZSH_STUFF}/zplug.zsh"
+# Plugin manager
+source "${ZSH_STUFF}/zgenom.zsh"
 
 # Path
 source "${ZSH_STUFF}/path.zsh"
@@ -12,3 +12,7 @@ source "${ZSH_STUFF}/functions.zsh"
 
 # Setup different dev tools
 source "${ZSH_STUFF}/tools.zsh"
+
+# Completions
+setopt complete_aliases
+fpath=(${ZSH_STUFF}/completions $fpath)
