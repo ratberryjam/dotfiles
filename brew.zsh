@@ -7,7 +7,7 @@ PACKAGES=(
     thefuck
     tree
     micro
-    moar
+    moor
     gum
 )
 

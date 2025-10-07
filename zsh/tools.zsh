@@ -42,9 +42,9 @@ if [ -f '/Volumes/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Volumes/dev/goo
 # thefuck
 eval $(thefuck --alias)
 
-# moar
-export PAGER=/opt/homebrew/bin/moar
-# export MOAR=
+# moor
+export PAGER=/opt/homebrew/bin/moor
+# export MOOR=
 
 # bat
 export BAT_THEME="TwoDark"
@@ -54,6 +54,5 @@ export ARTISAN_OPEN_ON_MAKE_EDITOR=code
 
 # VS Code
 if [ -x "$(command -v code)" ]; then
-	code --locate-shell-integration-path zsh
 	[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 fi
