@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
@@ -8,30 +7,7 @@ export ZSH="${HOME}/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
-
-# Theme options https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_PROMPT_ORDER=(
-  time          # Time stamps section
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  package       # Package version
-  golang        # Go section
-  php           # PHP section
-  ruby
-  docker        # Docker section
-  aws           # Amazon Web Services section
-  venv          # virtualenv section
-  exec_time     # Execution time
-  line_sep      # Line break
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
+ZSH_THEME="amuse"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,6 +68,7 @@ SPACESHIP_PROMPT_ORDER=(
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  artisan
   colorize
   colored-man-pages
   dash
@@ -99,6 +76,7 @@ plugins=(
   macos
   thefuck
   laravel
+  herd
 )
 
 source $ZSH/oh-my-zsh.sh

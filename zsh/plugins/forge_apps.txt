@@ -1,4 +1,0 @@
-zendesk-connector	lss-support-prd			lss-stg
-supportops			lss-support-prd			lss-stg
-phone-connector		lss-support-prd			lss-stg
-provision			lss-non-critical-prd	lss-stg

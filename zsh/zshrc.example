@@ -1,6 +1,6 @@
 export ZSH_STUFF="${HOME}/.dotfiles/zsh"
 
-. "$ZSH_STUFF/setup.zsh"
+source "$ZSH_STUFF/_init.zsh"
 
 export NPM_TOKEN_SHOPKEEP=
 export GITHUB_PACKAGE_TOKEN=

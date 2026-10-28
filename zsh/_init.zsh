@@ -1,7 +1,6 @@
 ## BASICS ##
 
-# Plugin manager
-source "${ZSH_STUFF}/zgenom.zsh"
+source "${ZSH_STUFF}/oh-my-zsh-config.zsh"
 
 # Path
 source "${ZSH_STUFF}/path.zsh"

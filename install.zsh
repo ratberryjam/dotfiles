@@ -15,17 +15,10 @@ source "${DOTFILES}/brew.zsh"
 mv "${HOME}/.zshrc" "${HOME}/.zshrc.${BACKUP_SUFFIX}"
 cp "${DOTFILES}/zsh/zshrc.example" "${HOME}/.zshrc"
 
-mv "${HOME}/.zlogout" "${HOME}/.zlogout.${BACKUP_SUFFIX}"
-ln -s "${DOTFILES}/zsh/zlogout" "${HOME}/.zlogout"
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)""
 
-# Install spaceship zsh theme
-curl -sS [https://starship.rs/install.sh](https://starship.rs/install.sh) | sh
-
-mkdir -p "$ZSH/custom/themes"
-if [[ ! -e "$ZSH/custom/themes/spaceship-prompt" ]]; then
-    git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH/custom/themes/spaceship-prompt"
-    ln -s "$ZSH/custom/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH/custom/themes/spaceship.zsh-theme"
-fi
+git clone https://github.com/jessarcher/zsh-artisan.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/artisan
 
 source ~/.zshrc
 

@@ -1,11 +1,12 @@
-eval "$(starship init zsh)"
-
-# iTerm2 Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+if [ "$(command -v micro)" ]; then
+	export EDITOR=micro
+else
+	export EDITOR=nano
+fi
 
 # Ruby
 if [ "$(command -v rbenv)" ]; then
-	eval "$(rbenv init -)"
+	eval "$(rbenv init - zsh)"
 fi
 
 # nvm
@@ -17,21 +18,12 @@ export NVM_DIR="$HOME/.nvm"
 # shellcheck source="$HOME/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup"
 ZCLI_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/@zendesk/zcli/autocomplete/zsh_setup" && test -f "$ZCLI_AC_ZSH_SETUP_PATH" && source "$ZCLI_AC_ZSH_SETUP_PATH"
 
-# PHP Brew
-source "$HOME/.phpbrew/bashrc"
-
-# Lightspeed shared Docker environment
-export SHARED_ENV_PATH=/dev/docker-shared-environment
-
-# rbenv
-eval "$(rbenv init - zsh)"
-
 # GPG (for signing commits)
 GPG_TTY="$(tty)"
 export GPG_TTY
 
 # 1Password plugins
-source "$HOME/.config/op/plugins.sh"
+# source "$HOME/.config/op/plugins.sh"
 
 # zoxide (replaces fasd)
 eval "$(zoxide init zsh)"
@@ -56,3 +48,11 @@ export ARTISAN_OPEN_ON_MAKE_EDITOR=code
 if [ -x "$(command -v code)" ]; then
 	[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 fi
+
+# Yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/james.ratcliffe/Library/Application Support/Herd/config/php/84/"
+# Herd injected PHP binary.
+export PATH="/Users/james.ratcliffe/Library/Application Support/Herd/bin/":$PATH
